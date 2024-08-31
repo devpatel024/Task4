@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    background-color: hsl(47, 88%, 63%);
+    width: 100dvw;
+    height: 100dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    width: 250px;
+    height: 350px;
+    background-color: hsl(0, 0%, 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    border: 1px solid black;
+    box-shadow: 4px 4px;
+    transition: all 0.3s ease-in-out;
+}
+main:hover{
+    box-shadow: 10px 10px;
+}
+
+.childMain {
+    padding: 15px;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+}
+
+.part1 {
+    display: flex;
+    width: 100%;
+    flex: .9;
+    /* border: 1px solid black; */
+    justify-content: center;
+    align-items: center;
+}
+
+.part1>img {
+    width: 100%;
+    border-radius: 10px;
+
+}
+
+
+
+
+
+
+
+
+
+.part2 {
+    width: 100%;
+    flex: 1;
+    /* border: 1px solid black; */
+    display: flex;
+    gap: .75rem;
+    flex-direction: column;
+    font-family: "Figtree", sans-serif;
+}
+
+.part2>button {
+    background-color: hsl(47, 88%, 63%);
+    border: none;
+    border-radius: 3px;
+    text-align: center;
+    font-size: 10px;
+    padding: 5px 0px;
+    font-weight: bold;
+    width: 60px;
+}
+
+.part2 > .p1{
+    font-size: 11px;
+}
+.part2 > h3{
+    font-size: 18px;
+    cursor: pointer;
+}
+.part2 > h3:hover{
+    color: hsl(47, 88%, 63%);
+}
+.part2 > .p2{
+    font-size: 11px;
+    font-weight: 500;
+    color: hsl(0, 0%, 42%);
+}
+
+.part2 > .reviewer{
+    display: flex;
+    align-items: center;
+    column-gap: .5rem;
+    margin-top: 5px;
+}
+
+.reviewer img{
+    width: 25px;
+    height: 25px;
+}
+.reviewer p{
+    font-size: 12px;
+    font-weight: 700;
+}
