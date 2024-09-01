@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
@@ -14,23 +14,24 @@ body {
 }
 
 main {
-    width: 250px;
-    height: 350px;
+    max-width: 384px;
+    height: 510px;
     background-color: hsl(0, 0%, 100%);
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 15px;
-    border: 1px solid black;
-    box-shadow: 4px 4px;
-    transition: all 0.3s ease-in-out;
+    border-radius: 20px;
+    border: 1.5px solid black;
+    box-shadow: 8px 8px;
+    transition: all 0.25s ease-in-out;
 }
-main:hover{
-    box-shadow: 10px 10px;
+
+main:hover {
+    box-shadow: 14px 14px;
 }
 
 .childMain {
-    padding: 15px;
+    padding: 20px;
     height: 100%;
     justify-content: center;
     align-items: center;
@@ -49,8 +50,7 @@ main:hover{
 
 .part1>img {
     width: 100%;
-    border-radius: 10px;
-
+    border-radius: 15px;
 }
 
 
@@ -74,42 +74,49 @@ main:hover{
 .part2>button {
     background-color: hsl(47, 88%, 63%);
     border: none;
-    border-radius: 3px;
+    border-radius: 4px;
     text-align: center;
-    font-size: 10px;
-    padding: 5px 0px;
-    font-weight: bold;
-    width: 60px;
+    font-size: 16px;
+    padding: 10px 18px;
+    font-weight: 700;
+    width: fit-content;
+    margin-top: 6px;
 }
 
-.part2 > .p1{
-    font-size: 11px;
+.part2>.p1 {
+    margin-top: 6px;
 }
-.part2 > h3{
-    font-size: 18px;
+
+.part2>h1 {
+    font-size: 24px;
+    transition: color 0.25s;
     cursor: pointer;
+    margin: 0;
+    margin-top: 2px;
 }
-.part2 > h3:hover{
+
+.part2>h1:hover {
     color: hsl(47, 88%, 63%);
 }
-.part2 > .p2{
-    font-size: 11px;
+
+.part2>.p2 {
     font-weight: 500;
     color: hsl(0, 0%, 42%);
+    margin-top: 4px;
 }
 
-.part2 > .reviewer{
+.part2>.reviewer {
     display: flex;
     align-items: center;
     column-gap: .5rem;
-    margin-top: 5px;
+    margin-top: 15px;
 }
 
-.reviewer img{
-    width: 25px;
-    height: 25px;
+.reviewer img {
+    max-width: 32px;
+    max-height: 32px;
 }
-.reviewer p{
-    font-size: 12px;
+
+.reviewer p {
     font-weight: 700;
 }
